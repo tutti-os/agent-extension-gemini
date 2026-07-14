@@ -8,6 +8,10 @@
     "type": "asset",
     "src": "assets/icon.svg"
   },
+  "heroImage": {
+    "type": "asset",
+    "src": "assets/hero-image.jpg"
+  },
   "runtime": {
     "kind": "standard-acp",
     "install": {

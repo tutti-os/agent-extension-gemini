@@ -23,6 +23,11 @@ The package is written to `build/tutti-agent/package`. The Tutti Agent Extension
 release workflow validates that directory, creates a reproducible ZIP, signs
 release metadata, and updates the version index.
 
+The manifest also owns Gemini's Agent home presentation assets: the primary
+`assets/icon.svg` and the square `assets/hero-image.jpg` used by Tutti's vinyl
+carousel. Tutti caches both from the verified extension artifact instead of
+maintaining a Gemini-specific renderer asset.
+
 ## License and trademarks
 
 The extension metadata is Apache-2.0 licensed. Gemini and the Gemini logo are

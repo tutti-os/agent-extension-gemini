@@ -16,6 +16,12 @@ if (manifest.schemaVersion !== "tutti.agent.manifest.v1" || manifest.agentKey !=
 if (manifest.runtime?.launch?.args?.join("\0") !== "--acp") {
   throw new Error("Gemini extension must launch the official --acp mode");
 }
+if (
+  manifest.heroImage?.type !== "asset" ||
+  manifest.heroImage?.src !== "assets/hero-image.jpg"
+) {
+  throw new Error("Gemini extension must declare its home hero image asset");
+}
 for (const file of Object.values(manifest.profiles)) {
   const profile = JSON.parse(await readFile(path.join(packageDir, file), "utf8"));
   if (!String(profile.schemaVersion || "").startsWith("tutti.agent.")) {
