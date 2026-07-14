@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "tutti.agent.tools.v1",
+  "tools": [
+    {
+      "match": { "ids": ["replace"] },
+      "canonicalId": "Edit",
+      "category": "file-change",
+      "presentation": { "renderer": "diff", "titleKey": "tools.edit.title" },
+      "fileEffect": { "source": "acp-content-diff" }
+    },
+    {
+      "match": { "ids": ["write_file"] },
+      "canonicalId": "Write",
+      "category": "file-change",
+      "presentation": { "renderer": "diff", "titleKey": "tools.write.title" },
+      "fileEffect": { "source": "acp-content-diff" }
+    },
+    {
+      "match": { "ids": ["run_shell_command"] },
+      "canonicalId": "Bash",
+      "category": "command",
+      "presentation": { "renderer": "terminal", "titleKey": "tools.shell.title" },
+      "command": { "source": "input", "path": "$.command" }
+    },
+    {
+      "match": { "ids": ["read_file", "read_many_files"] },
+      "canonicalId": "Read",
+      "category": "read",
+      "presentation": { "renderer": "code", "titleKey": "tools.read.title" }
+    },
+    {
+      "match": { "ids": ["list_directory", "glob", "search_file_content"] },
+      "canonicalId": "Search",
+      "category": "search",
+      "presentation": { "renderer": "file-list", "titleKey": "tools.search.title" }
+    },
+    {
+      "match": { "ids": ["google_web_search"] },
+      "canonicalId": "WebSearch",
+      "category": "web",
+      "presentation": { "renderer": "web-search", "titleKey": "tools.webSearch.title" }
+    },
+    {
+      "match": { "ids": ["web_fetch"] },
+      "canonicalId": "WebFetch",
+      "category": "web",
+      "presentation": { "renderer": "web-fetch", "titleKey": "tools.webFetch.title" }
+    }
+  ]
+}

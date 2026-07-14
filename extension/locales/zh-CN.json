@@ -1,0 +1,14 @@
+{
+  "agent.name": "Gemini CLI",
+  "agent.description": "通过 ACP 使用 Google Gemini CLI",
+  "runtime.install.title": "在当前项目安装 Gemini CLI",
+  "runtime.install.description": "将固定版本的 Gemini CLI 安装到当前项目由 Tutti 管理的运行时目录。",
+  "runtime.authRequired": "请登录 Gemini CLI，或配置受支持的 API 凭据。",
+  "tools.edit.title": "已编辑文件",
+  "tools.write.title": "已写入文件",
+  "tools.shell.title": "已运行命令",
+  "tools.read.title": "已读取文件",
+  "tools.search.title": "已搜索文件",
+  "tools.webSearch.title": "已搜索网页",
+  "tools.webFetch.title": "已获取网页内容"
+}

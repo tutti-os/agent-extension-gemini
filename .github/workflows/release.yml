@@ -1,0 +1,31 @@
+name: Publish Agent Extension
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Immutable extension version
+        required: true
+        default: "1.0.0"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    uses: tutti-os/tutti/.github/workflows/publish-tutti-agent-extension.yml@main
+    with:
+      agent_key: gemini
+      version: ${{ inputs.version }}
+      min_tutti_version: "0.0.0"
+      package_command: pnpm package:tutti-agent
+      package_dir: build/tutti-agent/package
+      signing_key_id: tutti-gemini-release-v1
+      aws_region: ${{ vars.TUTTI_APP_RELEASES_AWS_REGION }}
+      aws_role_arn: ${{ vars.TUTTI_APP_RELEASES_AWS_ROLE_ARN }}
+      s3_bucket: ${{ vars.TUTTI_APP_RELEASES_S3_BUCKET }}
+      s3_prefix: tutti-agent-releases
+      release_assets_base_url: https://d1x7gb6wqsqmnm.cloudfront.net/tutti-agent-releases
+    secrets:
+      signing_private_key: ${{ secrets.TUTTI_AGENT_EXTENSION_SIGNING_PRIVATE_KEY }}

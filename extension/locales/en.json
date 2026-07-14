@@ -1,0 +1,14 @@
+{
+  "agent.name": "Gemini CLI",
+  "agent.description": "Google Gemini CLI through ACP",
+  "runtime.install.title": "Install Gemini CLI in this project",
+  "runtime.install.description": "Installs the pinned Gemini CLI runtime in this project's Tutti-managed runtime directory.",
+  "runtime.authRequired": "Sign in to Gemini CLI or configure a supported API credential.",
+  "tools.edit.title": "Edited file",
+  "tools.write.title": "Wrote file",
+  "tools.shell.title": "Ran command",
+  "tools.read.title": "Read file",
+  "tools.search.title": "Searched files",
+  "tools.webSearch.title": "Searched the web",
+  "tools.webFetch.title": "Fetched web content"
+}

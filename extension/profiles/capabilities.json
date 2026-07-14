@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "tutti.agent.capabilities.v1",
+  "declared": {
+    "imageInput": true,
+    "audioInput": true,
+    "embeddedContext": true,
+    "interrupt": true,
+    "resume": true,
+    "permissionModes": true,
+    "modelSelection": true,
+    "mcpHttp": true,
+    "mcpSse": true,
+    "tokenUsage": true,
+    "rateLimits": false,
+    "planMode": true,
+    "skills": false,
+    "undoReapply": true
+  }
+}
