@@ -39,8 +39,9 @@ tests this repository, uploads versioned artifacts without overwriting existing
 bytes, updates `versions.json` and `latest.json`, and invalidates only the
 mutable CDN paths.
 
-The manifest also owns Gemini's Agent home presentation assets: the primary
-`assets/icon.svg` and the square `assets/hero-image.jpg` used by Tutti's vinyl
+The manifest also owns Gemini's presentation assets: the primary
+`assets/icon.svg`, used for Agent selection, conversation rows, Message Center,
+and mentions, plus the square `assets/hero-image.jpg` used by Tutti's vinyl
 carousel. Tutti caches both from the verified extension artifact instead of
 maintaining a Gemini-specific renderer asset.
 
