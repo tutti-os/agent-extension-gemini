@@ -13,7 +13,7 @@
     "tokenUsage": true,
     "rateLimits": false,
     "planMode": true,
-    "skills": false,
+    "skills": true,
     "undoReapply": true
   }
 }

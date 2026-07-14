@@ -23,5 +23,27 @@
       "runtimeId": "plan",
       "semantic": "read-only"
     }
-  ]
+  ],
+  "skills": {
+    "invocation": "textTrigger",
+    "triggerPrefix": "/",
+    "roots": [
+      {
+        "scope": "workspace",
+        "path": ".gemini/skills"
+      },
+      {
+        "scope": "workspace",
+        "path": ".agents/skills"
+      },
+      {
+        "scope": "user",
+        "path": ".gemini/skills"
+      },
+      {
+        "scope": "user",
+        "path": ".agents/skills"
+      }
+    ]
+  }
 }
