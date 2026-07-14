@@ -4,10 +4,12 @@ This repository packages the declarative metadata that connects the official
 [Gemini CLI](https://github.com/google-gemini/gemini-cli) ACP runtime to Tutti.
 It does not fork or redistribute Gemini CLI.
 
-Tutti first discovers an existing compatible `gemini` executable. If no local
-runtime is available, the extension can offer a project-scoped installation of
-the exact `@google/gemini-cli@0.50.0` npm package. Gemini runs as an ACP subprocess
-through `gemini --acp`; no extension code is loaded into Tutti or Electron.
+Tutti currently discovers an existing compatible `gemini` executable. The
+manifest declares a future project-scoped installation of the exact
+`@google/gemini-cli@0.50.0` npm package, but Tutti will not execute that command
+until its explicit user-confirmation flow is available. Gemini runs as an ACP
+subprocess through `gemini --acp`; no extension code is loaded into Tutti or
+Electron.
 
 ## Build
 
