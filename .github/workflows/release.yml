@@ -27,5 +27,6 @@ jobs:
       s3_bucket: ${{ vars.TUTTI_APP_RELEASES_S3_BUCKET }}
       s3_prefix: tutti-agent-releases
       release_assets_base_url: https://d1x7gb6wqsqmnm.cloudfront.net/tutti-agent-releases
+      cloudfront_distribution_id: ${{ vars.TUTTI_AGENT_RELEASES_CLOUDFRONT_DISTRIBUTION_ID }}
     secrets:
       signing_private_key: ${{ secrets.TUTTI_AGENT_EXTENSION_SIGNING_PRIVATE_KEY }}
