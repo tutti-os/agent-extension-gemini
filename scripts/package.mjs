@@ -4,7 +4,7 @@ import path from "node:path";
 const root = path.resolve(import.meta.dirname, "..");
 const sourceDir = path.join(root, "extension");
 const packageDir = path.join(root, "build", "tutti-agent", "package");
-const version = String(process.env.TUTTI_AGENT_EXTENSION_VERSION || "1.0.0").trim();
+const version = String(process.env.TUTTI_AGENT_EXTENSION_VERSION || "1.0.2").trim();
 
 if (!/^[0-9]+\.[0-9]+\.[0-9]+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/u.test(version)) {
   throw new Error(`invalid TUTTI_AGENT_EXTENSION_VERSION: ${version}`);

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "tutti.agent.manifest.v1",
   "agentKey": "gemini",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "name": "Gemini CLI",
   "description": "Google Gemini CLI through the Agent Client Protocol",
   "icon": {
