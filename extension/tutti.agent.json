@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "tutti.agent.manifest.v1",
+  "schemaVersion": "tutti.agent.manifest.v2",
   "agentKey": "gemini",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "name": "Gemini CLI",
   "description": "Google Gemini CLI through the Agent Client Protocol",
   "icon": {
     "type": "asset",
     "src": "assets/icon.svg"
   },
-  "sidebarIcon": {
+  "maskIcon": {
     "type": "asset",
-    "src": "assets/sidebar-icon.svg"
+    "src": "assets/mask-icon.svg"
   },
   "heroImage": {
     "type": "asset",
