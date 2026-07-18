@@ -40,8 +40,9 @@ bytes, updates `versions.json` and `latest.json`, and invalidates only the
 mutable CDN paths.
 
 The manifest also owns Gemini's presentation assets: the primary
-`assets/icon.svg`, used for Agent selection, conversation rows, Message Center,
-and mentions, plus the square `assets/hero-image.jpg` used by Tutti's vinyl
+`assets/icon.svg`, used for conversation rows, Message Center, and mentions;
+the rail-specific rounded `assets/sidebar-icon.svg`; plus the square
+`assets/hero-image.jpg` used by Tutti's vinyl
 carousel. Tutti caches both from the verified extension artifact instead of
 maintaining a Gemini-specific renderer asset.
 
