@@ -8,6 +8,10 @@
     "type": "asset",
     "src": "assets/icon.svg"
   },
+  "sidebarIcon": {
+    "type": "asset",
+    "src": "assets/sidebar-icon.svg"
+  },
   "heroImage": {
     "type": "asset",
     "src": "assets/hero-image.jpg"
