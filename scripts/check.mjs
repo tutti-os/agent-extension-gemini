@@ -10,7 +10,7 @@ const packageDir = path.join(root, "build", "tutti-agent", "package");
 const manifest = JSON.parse(
   await readFile(path.join(packageDir, "tutti.agent.json"), "utf8")
 );
-if (manifest.schemaVersion !== "tutti.agent.manifest.v1" || manifest.agentKey !== "gemini") {
+if (manifest.schemaVersion !== "tutti.agent.manifest.v2" || manifest.agentKey !== "gemini") {
   throw new Error("invalid Gemini extension manifest identity");
 }
 if (manifest.runtime?.launch?.args?.join("\0") !== "--acp") {
